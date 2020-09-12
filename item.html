@@ -291,10 +291,11 @@
                     </div>
                 </div>
                 <div class="jumbotron-item">
+                    <br/>
                     <!-- Button trigger modal search -->
                     <button
                         type="button"
-                        class="btn btn-primary btn btn-primary btn-lg mt-5""
+                        class="btn btn-lg mt-5 custom-btn"
                         data-toggle="modal"
                         data-target="#openSearch"
                     >
@@ -312,14 +313,9 @@
                         <div class="modal-dialog modal-xl">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h4
-                                        class="modal-title"
-                                        id="seartchTitle"
-                                    >
+                                    <h4 class="modal-title" id="searchTitle">
                                         Find another Watch
                                     </h4>
-                                    
-
                                 </div>
                                 <div class="modal-body">
                                     <div
@@ -375,6 +371,7 @@
                                     <button
                                         type="button"
                                         class="btn btn-primary"
+                                        data-dismiss="modal"
                                     >
                                         Find your Watch
                                     </button>
@@ -387,45 +384,337 @@
         </header>
         <main class="container-fluid">
             <div class="row">
-                <div id="carousel-thumb" class="carousel slide carousel-thumbnails mt-5 col-md-8 mx-auto" data-ride="carousel">
+                <div
+                    id="carousel-thumb"
+                    class="carousel slide carousel-thumbnails mt-5 col-md-8 mx-auto"
+                    data-ride="carousel"
+                >
                     <!--Slides-->
-                    <div class="carousel-inner carousel-view-item" role="listbox" >
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="/img/watch1.jpg" alt="First slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/img/watch2.jpg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="/img/watch3.jpg" alt="Third slide">
-                    </div>
+                    <div
+                        class="carousel-inner carousel-inner-custom carousel-view-item"
+                        role="listbox"
+                    >
+                        <div class="carousel-item active">
+                            <img
+                                class="d-block w-100"
+                                src="/img/watch1.jpg"
+                                alt="First slide"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                class="d-block w-100"
+                                src="/img/watch2.jpg"
+                                alt="Second slide"
+                            />
+                        </div>
+                        <div class="carousel-item">
+                            <img
+                                class="d-block w-100"
+                                src="/img/watch3.jpg"
+                                alt="Third slide"
+                            />
+                        </div>
                     </div>
                     <!--/.Slides-->
                     <!--Controls-->
-                    <a class="carousel-control-prev" href="#carousel-thumb" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                    <a
+                        class="carousel-control-prev"
+                        href="#carousel-thumb"
+                        role="button"
+                        data-slide="prev"
+                    >
+                        <span
+                            class="carousel-control-prev-icon carousel-control-prev-icon-custom"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carousel-thumb" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <a
+                        class="carousel-control-next"
+                        href="#carousel-thumb"
+                        role="button"
+                        data-slide="next"
+                    >
+                        <span
+                            class="carousel-control-next-icon carousel-control-next-icon-custom"
+                            aria-hidden="true"
+                        ></span>
+                        <span class="sr-only">Next</span>
                     </a>
                     <!--/.Controls-->
                     <ol class="carousel-indicators">
-                    <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img class="d-block w-100" src="/img/watch1.jpg"
-                        class="img-fluid"></li>
-                    <li data-target="#carousel-thumb" data-slide-to="1"><img class="d-block w-100" src="/img/watch2.jpg"
-                        class="img-fluid"></li>
-                    <li data-target="#carousel-thumb" data-slide-to="2"><img class="d-block w-100" src="/img/watch3.jpg"
-                        class="img-fluid"></li>
+                        <li
+                            data-target="#carousel-thumb"
+                            data-slide-to="0"
+                            class="active"
+                        >
+                            <img
+                                class="d-block w-100"
+                                src="/img/watch1.jpg"
+                                class="img-fluid"
+                            />
+                        </li>
+                        <li data-target="#carousel-thumb" data-slide-to="1">
+                            <img
+                                class="d-block w-100"
+                                src="/img/watch2.jpg"
+                                class="img-fluid"
+                            />
+                        </li>
+                        <li data-target="#carousel-thumb" data-slide-to="2">
+                            <img
+                                class="d-block w-100"
+                                src="/img/watch3.jpg"
+                                class="img-fluid"
+                            />
+                        </li>
                     </ol>
                 </div>
             </div>
-            <div>
-                <div class="mx-auto row col-sm-12 mt-5">
-                    <h class="display-4 text"> Jaeger-LeCoultre Master Q1372520 </h>
+            <div class="row">
+                <h class="display-4 mx-auto mt-5"
+                    >Jaeger-LeCoultre Master Q1372520
+                </h>
+            </div>
+            <hr class="mt-5" />
+
+            <div class="row">
+                <div class="mx-auto">
+                    <h class="display-4"> $15,015 </h>
+                    <h class="caption">8 Bids | Start Price: $8000</h>
+                    <div class="mt-2">
+                        <button
+                            type="button"
+                            class="btn btn-add btn-primary btn-m mb-4"
+                            data-toggle="modal"
+                            data-target="#bid"
+                        >
+                            Bid Now
+                        </button>
+                        <button
+                            type="button"
+                            class="btn btn-add btn-secondary btn-m mb-4"
+                        >
+                            Add to Watchlist
+                        </button>
+                        <div
+                            class="modal fade"
+                            id="bid"
+                            tabindex="-1"
+                            aria-labelledby="bid"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog modal-s">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title" id="bid">
+                                            Place Bid
+                                        </h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row my-3 col-sm-11 mx-auto">
+                                            <div
+                                                class="input-group input-group mb-3"
+                                            >
+                                                <div
+                                                    class="input-group-prepend"
+                                                >
+                                                    <span
+                                                        class="input-group-text"
+                                                        id="inputGroup-sizing-default"
+                                                        >$</span
+                                                    >
+                                                </div>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Default"
+                                                    aria-describedby="inputGroup-sizing-default"
+                                                    placeholder="15,016 or more"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button
+                                            type="button"
+                                            class="btn btn-secondary"
+                                            data-dismiss="modal"
+                                        >
+                                            Close
+                                        </button>
+                                        <button
+                                            type="button"
+                                            class="btn btn-primary"
+                                            data-dismiss="modal"
+                                        >
+                                            Place Bid
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <hr />
+
+            <div class="row">
+                <div class="col-sm-3 mx-auto">
+                    <h4>Specifications</h4>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h6 class="specs-title">Brand</h6>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="specs">Jaeger-LeCoultre</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h6 class="specs-title">Model</h6>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="specs">Q1372520</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h6 class="specs-title">Year</h6>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="specs">2016</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h6 class="specs-title">Movement</h6>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="specs">Automatic</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h6 class="specs-title">Size</h6>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="specs">39mm</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h6 class="specs-title">Gender</h6>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="specs">Unisex</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h6 class="specs-title">Condition</h6>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="specs">Very good</p>
+                        </div>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h6 class="specs-title">Atmospheres</h6>
+                        </div>
+                        <div class="col-sm-7">
+                            <p class="specs">5 ATM</p>
+                        </div>
+                    </div>
+                    <hr/>
+                        
+                    </div>
+                    <div class="col-sm-6 mx-auto">
+                        <h4>Description</h4>
+                        <hr/>
+                        <p>
+                            Elegant, sophisticated and characterised by
+                            wonderfully sleek designs, the Jaeger-LeCoultre
+                            Master collection showcases stripped back models
+                            that focus purely on the essentials.
+                            <br /><br />
+                            Embracing truly refined design, this
+                            Jaeger-LeCoultre Master Ultra Thin watch sits
+                            confidently within a 39mm 18ct rose gold case and
+                            fastens with a black Alligator leather strap. The
+                            charming dial is equipped with rose gold-toned hands
+                            and hour markers, as well as three chronograph
+                            sub-dials.
+                            <br /><br />
+                            Powered by a reliable automatic movement and water
+                            resistant to 50 meters, a black Alligator leather
+                            strap completes the look.
+                        </p>
+                        <!-- Button trigger modal -->
+                        <h4 class="mt-5">Comments <a><img src="/img/add_comment.png" class="comment-icon" type="button" data-toggle="modal"
+                            data-target="#addcomment"/></a></h4> 
+                        <!-- Modal -->
+                        <div class="modal fade" id="addcomment" tabindex="-1" role="dialog" aria-labelledby="addcommentlabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="addcommentlabel">Add a Comment</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="form-group">
+
+                                        <textarea class="form-control" id="textarea" rows="3"></textarea>
+                                      </div>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal">Post</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>    
+
+                        <hr/>
+                        <div class="media">
+                            <img class="mr-3 profile-picture" src="/img/profile.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                              <h5 class="mt-0">Peter</h5>
+                              Absolutely fantastic watch 5/7
+                            </div>
+                          </div>
+                          <div class="media">
+                            <img class="mr-3 profile-picture" src="/img/profile.png" alt="Generic placeholder image">
+                            <div class="media-body">
+                              <h5 class="mt-0">Nathaniel</h5>
+                              Highly recommended
+                            </div>
+                          </div>
+                          <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                          </nav>
+                    </div>
+                    
+                </div>
+            </div>
+            <hr/>
         </main>
 
         <footer class="footer">
