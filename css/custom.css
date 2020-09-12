@@ -16,9 +16,15 @@
     margin-left: 165px;
 }
 
+.watchlist-date {
+    margin-left: 145px;
+    margin-top: -15px;
+    margin-bottom: -5px;
+}
+
 .watchlist-remover {
     margin-bottom: 5px;
-    margin-left: 220px;
+    margin-left: 22px;
 }
 
 .sub-heading {
