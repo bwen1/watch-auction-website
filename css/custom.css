@@ -173,6 +173,15 @@
     width: 115px;
 }
 
+.dollar-span {
+    background-color: white;
+    border-right: none;
+}
+
+.dollar-input {
+    border-left: none;
+}
+
 /* ----- Custom Button ----- */
 
 .custom-btn {
